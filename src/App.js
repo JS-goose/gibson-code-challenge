@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import Quip from "quip.js";
+import axios from 'axios';
+
+const makePostRequest = async () => {
+  let response = await axios.post('https://platform.quip.com/1/threads/new-document');
+
+  console.log(response.status);
+}
 
 const quipApp = new Quip({
   // Quip Access Token (required)

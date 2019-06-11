@@ -3,9 +3,20 @@ import Quip from "quip.js";
 import axios from "axios";
 
 const makePostRequest = async () => {
-  let response = await axios.post("https://platform.quip.com/1/threads/new-document");
+  try {
+    const options = {
+      accessToken: 'QVJNQU1BZHJOVHo=|1591737067|4qcahbUMtC9BBSJUJx4RXfHhD+/oguWLLD+jvbJZYx4=',
+      headers: {
+        
 
-  console.log(response.status);
+      } 
+
+    }
+    let response = axios.post("https://platform.quip.com/1/threads/new-document", options);
+    console.log(response.status);
+  } catch (error) {
+    console.error(`POST Error: ${error}`);
+  }
 };
 
 const quipApp = new Quip({
@@ -18,7 +29,7 @@ class App extends Component {
     console.log(quipApp);
     return (
       <div className="App">
-        <button onClick={this.makePostRequest}>POST REQUEST</button>
+        <button onClick={() => makePostRequest()}>POST REQUEST</button>
       </div>
     );
   }

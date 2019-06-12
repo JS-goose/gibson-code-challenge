@@ -2,16 +2,20 @@ import React, { Component } from 'react';
 import Quip from 'quip.js';
 import axios from 'axios';
 
-const makePostRequest = () => {
-  fetch('https://platform.quip.com/1/threads/new-document', {
+const makePostRequest = async () => {
+  const accessToken = 'QVJNQU1Bc2VKaWE=|1591916456|ZAKGDHexrykpcdkGjULyvJF771+UBUf2jB1dGQdTW9w='
+  await fetch('https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/threads/new-document', {
     method: 'POST',
     headers: {
-      'Content-Type': 'multipart/form-data',
-      'Authorization': 'QVJNQU1BZHJOVHo=|1591737067|4qcahbUMtC9BBSJUJx4RXfHhD+/oguWLLD+jvbJZYx4=',
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Authorization': `Bearer ${accessToken}`,
+      'Access-Control-Allow-Origin': '*',
     },
     body: {
       title: 'POST TEST 2',
       format: 'html',
+      content: 'This is a test of the POST function',
+      type: 'spreadsheet',
     },
   });
 };
@@ -43,7 +47,6 @@ const quipApp = new Quip({
 
 class App extends Component {
   render() {
-    console.log(quipApp);
     return (
       <div className="App">
         <button onClick={() => makePostRequest()}>POST REQUEST</button>

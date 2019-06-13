@@ -15,7 +15,7 @@ class CenterContent extends Component {
           headers: {
             'content-type': 'application/x-www-form-urlencoded',
             authorization:
-              'Bearer QVJNQU1Bc2VKaWE=|1591916456|ZAKGDHexrykpcdkGjULyvJF771+UBUf2jB1dGQdTW9w=',
+              'Bearer QVJNQU1BSHJSOG8=|1591998986|j1/fAGVLztMYsSLaaJIi6sppKLGtIrFs8tSld6pOdiI=',
           },
           body,
         })
@@ -26,6 +26,20 @@ class CenterContent extends Component {
             console.error(error);
           });
       };
+
+      getThreads = async () => {
+          const headers = {
+            Authorization: 'Bearer QVJNQU1BSHJSOG8=|1591998986|j1/fAGVLztMYsSLaaJIi6sppKLGtIrFs8tSld6pOdiI=',
+          }
+          
+          await fetch('https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/threads/recent', headers    
+          )
+          .then((response) => {
+              console.log(response)
+          }).catch((error) => {
+              console.error(`Error in fetching threads: ${error}`)
+          })
+      }
 
     render() {
         return (

@@ -2,6 +2,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 15vh;
     border-bottom: 5px solid #BE1F23;
 }

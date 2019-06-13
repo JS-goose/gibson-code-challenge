@@ -1,15 +1,23 @@
 nav {
     display: flex;
     flex-direction: row;
-    background-color: lightgray;
+    justify-content: space-between;
+    height: 15vh;
+    border-bottom: 5px solid #BE1F23;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    padding-right: 2%;
 }
 
 nav ul li a{
-    padding-right: 10px;
+    padding-right: 20px;
     text-decoration: none;
+}
+
+#nav-logo {
+    height: 10vh;
+    padding-left: 2%;
 }

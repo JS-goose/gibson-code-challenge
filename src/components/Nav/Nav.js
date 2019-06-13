@@ -11,7 +11,7 @@ const Nav = (props) => {
   ];
   return (
     <nav>
-      <img src={logo} alt="gibson plumbing"/>
+      <img src={logo} alt="gibson plumbing" id={styles['nav-logo']}/>
       <ul>
         {navLinks.map((item,key) => {
           return <li key={key}>{item}</li>;

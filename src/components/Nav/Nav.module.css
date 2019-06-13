@@ -5,6 +5,8 @@ nav {
     align-items: center;
     height: 15vh;
     border-bottom: 5px solid var(--red);
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 nav ul {
@@ -16,6 +18,12 @@ nav ul {
 nav ul li a{
     padding-right: 20px;
     text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--orange);
 }
 
 #nav-logo {

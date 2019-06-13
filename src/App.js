@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import qs from 'qs';
 import Nav from './components/Nav/Nav';
+import CenterContent from './components/CenterContent/CenterContent';
 import Footer from './components/Footer/Footer';
 
 const makePostRequest = () => {
@@ -34,6 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
+        <CenterContent />
         <button onClick={() => makePostRequest()}>POST REQUEST</button>
         <Footer />
       </div>

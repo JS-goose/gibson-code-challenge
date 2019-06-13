@@ -3,7 +3,15 @@
   --orange: #DF7A1B;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

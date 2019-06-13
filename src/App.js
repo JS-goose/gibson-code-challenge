@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import qs from 'qs';
 import Nav from './components/Nav/Nav';
+import Footer from './components/Footer/Footer';
 
 const makePostRequest = () => {
   const body = qs.stringify({
@@ -34,6 +35,7 @@ class App extends Component {
       <div className="App">
         <Nav />
         <button onClick={() => makePostRequest()}>POST REQUEST</button>
+        <Footer />
       </div>
     );
   }

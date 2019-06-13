@@ -2,43 +2,49 @@ import React, { Component } from 'react';
 import Quip from 'quip.js';
 import axios from 'axios';
 
-const makePostRequest = async () => {
-  const accessToken = 'QVJNQU1Bc2VKaWE=|1591916456|ZAKGDHexrykpcdkGjULyvJF771+UBUf2jB1dGQdTW9w='
-  await fetch('https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/threads/new-document', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': `Bearer ${accessToken}`,
-      'Access-Control-Allow-Origin': '*',
-    },
-    body: {
-      title: 'POST TEST 2',
-      format: 'html',
-      content: 'This is a test of the POST function',
-      type: 'spreadsheet',
-    },
-  });
-};
-
 // const makePostRequest = async () => {
-//   try {
-//     const options = {
-//       accessToken: 'QVJNQU1BZHJOVHo=|1591737067|4qcahbUMtC9BBSJUJx4RXfHhD+/oguWLLD+jvbJZYx4=',
+//   const accessToken = 'QVJNQU1Bc2VKaWE=|1591916456|ZAKGDHexrykpcdkGjULyvJF771+UBUf2jB1dGQdTW9w=';
+//   await fetch(
+//     'https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/threads/new-document',
+//     {
+//       method: 'POST',
 //       headers: {
-//         'Content-Type': 'multipart/form-data',
-//         Authorization: 'Bearer QVJNQU1BZHJOVHo=|1591737067|4qcahbUMtC9BBSJUJx4RXfHhD+/oguWLLD+jvbJZYx4=',
+//         'Content-Type': 'application/x-www-form-urlencoded',
+//         Authorization: `Bearer ${accessToken}`,
 //       },
-//       body: {
-//         title: 'POST TEST 2',
+//       form: {
+//         title: 'React App',
+//         type: 'spreadsheet',
 //         format: 'html',
+//         content: 'This is a test of the POST function',
 //       },
-//     };
-//     let response = await axios.post('https://platform.quip.com/1/threads/new-document', options);
-//     console.log(response.status);
-//   } catch (error) {
-//     console.error(`POST Error: ${error}`);
-//   }
+//     }
+//   );
 // };
+
+const makePostRequest = async () => {
+  try {
+    const accessToken = 'QVJNQU1Bc2VKaWE=|1591916456|ZAKGDHexrykpcdkGjULyvJF771+UBUf2jB1dGQdTW9w=';
+    await fetch(
+      'https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/threads/new-document',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Authorization: `Bearer ${accessToken}`,
+        },
+        form: {
+          title: 'React App',
+          type: 'spreadsheet',
+          format: 'html',
+          content: 'This is a test of the POST function',
+        },
+      }
+    );
+  } catch (error) {
+    console.error(`POST Error: ${error}`);
+  }
+};
 
 const quipApp = new Quip({
   // Quip Access Token (required)

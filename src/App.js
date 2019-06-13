@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from './components/Nav/Nav'
 
 const makePostRequest = () => {
   // const accessToken = 'QVJNQU1Bc2VKaWE=|1591916456|ZAKGDHexrykpcdkGjULyvJF771+UBUf2jB1dGQdTW9w=';
@@ -30,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Nav />
         <button onClick={() => makePostRequest()}>POST REQUEST</button>
       </div>
     );

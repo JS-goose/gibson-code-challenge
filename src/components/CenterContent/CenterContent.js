@@ -5,6 +5,7 @@ class CenterContent extends Component {
         return (
             <div>
                 CenterContent
+                <button onClick={this.props.makePostRequest}>POST REQUEST</button>
             </div>
         )
     }

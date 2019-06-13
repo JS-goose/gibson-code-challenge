@@ -35,8 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <CenterContent />
-        <button onClick={() => makePostRequest()}>POST REQUEST</button>
+        <CenterContent makePostRequest={makePostRequest}/>
         <Footer />
       </div>
     );

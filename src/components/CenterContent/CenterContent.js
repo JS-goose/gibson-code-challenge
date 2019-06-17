@@ -1,5 +1,6 @@
 import React, { Component }from 'react';
 import qs from 'qs';
+import axios from 'axios';
 
 class CenterContent extends Component {
     makePostRequest = () => {
@@ -15,7 +16,7 @@ class CenterContent extends Component {
           headers: {
             'content-type': 'application/x-www-form-urlencoded',
             authorization:
-              'Bearer QVJNQU1BSHJSOG8=|1591998986|j1/fAGVLztMYsSLaaJIi6sppKLGtIrFs8tSld6pOdiI=',
+              'Bearer QVJNQU1BQVFrYmU=|1592341477|0BjZDfHHvNc9YhMWAp6/bIXZODod9ClZc6fYrBA8K3U=',
           },
           body,
         })
@@ -27,19 +28,21 @@ class CenterContent extends Component {
           });
       };
 
-      getThreads = async () => {
-          const headers = {
-            Authorization: 'Bearer QVJNQU1BSHJSOG8=|1591998986|j1/fAGVLztMYsSLaaJIi6sppKLGtIrFs8tSld6pOdiI=',
-          }
+      // getThreads = () => {
+      //     const header = {
+      //       'Content-Type': 'application/json; charset=UTF-8',
+      //       Authorization: 'Bearer QVJNQU1BQVFrYmU=|1592341477|0BjZDfHHvNc9YhMWAp6/bIXZODod9ClZc6fYrBA8K3U=',
+      //       'Grant-Type': 'Authorization Code'
+      //     }
           
-          await fetch('https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/threads/recent', headers    
-          )
-          .then((response) => {
-              console.log(response)
-          }).catch((error) => {
-              console.error(`Error in fetching threads: ${error}`)
-          })
-      }
+      //     axios.get('https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/oauth/login', header    
+      //     )
+      //     .then((response) => {
+      //         console.log(response)
+      //     }).catch((error) => {
+      //         console.error(`Error in fetching threads: ${error}`)
+      //     })
+      // }
 
     render() {
         return (

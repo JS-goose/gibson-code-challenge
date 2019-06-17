@@ -2,6 +2,8 @@ import React, { Component }from 'react';
 import qs from 'qs';
 import axios from 'axios';
 
+const userID = "ARMAEAXXOQQ"
+
 class CenterContent extends Component {
     makePostRequest = () => {
         const body = qs.stringify({
@@ -43,6 +45,10 @@ class CenterContent extends Component {
       //         console.error(`Error in fetching threads: ${error}`)
       //     })
       // }
+
+      getUsers = () => {
+
+      }
 
     render() {
         return (

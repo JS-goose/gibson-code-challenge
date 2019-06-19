@@ -24,10 +24,11 @@
     display: flex;
     height: 5vh;
     justify-content: center;
+    margin: 8px 0px 8px 0;
 }
 
 .control-buttons {
-    margin-top: 15px;
+    margin-top: 5px;
     width: 180px;
     font-size: 0.9rem;
     margin-right: 10px;

@@ -9,17 +9,31 @@
 #spreadsheet-container {
     background-color: lightblue;
     height: 100%;
-    width: 75%;
+    width: 85%;
+    margin-top: 10px;
 }
 
 #recent-files-container {
     background-color: lightcoral;
     height: 100%;
-    width: 25%;
+    width: 15%;
+    margin-top: 10px;
 }
 
 #controls-container {
     display: flex;
     height: 5vh;
     justify-content: center;
+}
+
+.control-buttons {
+    margin-top: 15px;
+    width: 180px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    cursor: pointer;
 }

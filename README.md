@@ -1,3 +1,63 @@
+# Gibson Code Challenge
+[./assets/preview.png](a preview of the Gibson code challenge application)
+
+This is a coding challenge I received as part of an interview for a developer position.  It is build on React / Create React App.
+
+
+## Getting Started
+* Download or fork the rep
+
+### Prerequisites
+
+* React
+* Create React App
+* React Scripts
+
+### Installing
+
+
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [The Quip Automation API](https://baconlover.quip.com/dev/automation/documentation#overview)
+* [Axios - A promise based HTTP client](https://www.npmjs.com/package/axios) 
+* [QS - A querystring parsing and stringify library with some added security](https://www.npmjs.com/package/qs)
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -60,7 +60,7 @@ class CenterContent extends Component {
                 <button onClick={this.getThreads}>Get Recent Spreadsheets</button>
                 <button>Import Spreadsheet(s)</button>
                 <button>Export Spreadsheet(s)</button>
-                <button>DELETE CUIRRENT</button>
+                <button>DELETE CURRENT</button>
             </article>
         )
     }

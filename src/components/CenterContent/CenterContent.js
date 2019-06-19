@@ -63,7 +63,8 @@ class CenterContent extends Component {
           <button className={styles['control-buttons']} onClick={this.getThreads}>
             Recent Spreadsheets
           </button>
-          <button className={styles['control-buttons']}>Import Spreadsheet(s)</button>
+          <label htmlFor="import-spreadsheet-button" />
+          <input type="file" name="imported-spreadsheet" id="import-spreadsheet-button" />
           <button className={styles['control-buttons']}>Export Current</button>
           <button className={styles['control-buttons']}>DELETE CURRENT</button>
         </div>

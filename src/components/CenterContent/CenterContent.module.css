@@ -49,6 +49,7 @@
   background-color: white;
 }
 
+/* Hides the input button in order for the styling on the label to take effect */
 input[type='file'] {
   width: 0.1px;
   height: 0.1px;
@@ -58,6 +59,7 @@ input[type='file'] {
   z-index: -1;
 }
 
+/* The label is styled to look like the input, all functionality and accessibility are operational */
 label {
   display: flex;
   justify-content: center;

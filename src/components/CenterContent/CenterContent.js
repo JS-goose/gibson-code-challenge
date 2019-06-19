@@ -57,15 +57,15 @@ class CenterContent extends Component {
           <div id={styles['recent-files-container']}>recent files</div>
         </article>
         <div id={styles['controls-container']}>
-          <button class={styles['control-buttons']} onClick={this.makePostRequest}>
+          <button className={styles['control-buttons']} onClick={this.makePostRequest}>
             Create New Spreadsheet
           </button>
-          <button class={styles['control-buttons']} onClick={this.getThreads}>
+          <button className={styles['control-buttons']} onClick={this.getThreads}>
             Recent Spreadsheets
           </button>
-          <button class={styles['control-buttons']}>Import Spreadsheet(s)</button>
-          <button class={styles['control-buttons']}>Export Current</button>
-          <button class={styles['control-buttons']}>DELETE CURRENT</button>
+          <button className={styles['control-buttons']}>Import Spreadsheet(s)</button>
+          <button className={styles['control-buttons']}>Export Current</button>
+          <button className={styles['control-buttons']}>DELETE CURRENT</button>
         </div>
       </React.Fragment>
     );

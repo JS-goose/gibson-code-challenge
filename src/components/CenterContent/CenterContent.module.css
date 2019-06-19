@@ -1,5 +1,5 @@
 #center-content-container {
-    height: calc(100vh - 19.5vh - 10vh);
+    height: calc(100vh - 22.1vh - 10vh);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,4 +36,9 @@
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.control-buttons:hover {
+    font-size: 0.91rem;
+    text-decoration: underline;
 }

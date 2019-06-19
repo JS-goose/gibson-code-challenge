@@ -37,9 +37,14 @@
     color: white;
     border: none;
     cursor: pointer;
+    border: 1px solid rgb(151, 151, 151);
 }
 
 .control-buttons:hover {
     font-size: 0.91rem;
     text-decoration: underline;
+    box-shadow: 3px 3px 10px var(--red);
+    border: 1px solid var(--red);
+    color: var(--red);
+    background-color: white;
 }

@@ -7,7 +7,7 @@
 }
 
 #spreadsheet-container {
-    background-color: lightblue;
+    border: 1px solid rgb(151, 151, 151);
     height: 100%;
     width: 85%;
     margin-top: 10px;

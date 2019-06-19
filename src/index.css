@@ -1,6 +1,7 @@
 :root {
   --red: #be1f23;
   --orange: #df7a1b;
+  --lightgray: rgb(151, 151, 151);
 }
 
 html {

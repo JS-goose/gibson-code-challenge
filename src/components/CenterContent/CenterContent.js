@@ -61,10 +61,10 @@ class CenterContent extends Component {
             Create New Spreadsheet
           </button>
           <button class={styles['control-buttons']} onClick={this.getThreads}>
-            Get Recent Spreadsheets
+            Recent Spreadsheets
           </button>
           <button class={styles['control-buttons']}>Import Spreadsheet(s)</button>
-          <button class={styles['control-buttons']}>Export Spreadsheet(s)</button>
+          <button class={styles['control-buttons']}>Export Current</button>
           <button class={styles['control-buttons']}>DELETE CURRENT</button>
         </div>
       </React.Fragment>

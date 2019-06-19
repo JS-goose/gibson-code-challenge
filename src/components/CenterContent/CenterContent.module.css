@@ -1,3 +1,17 @@
 #center-content-container {
     height: calc(100vh - 17.1vh - 10vh);
+    display: flex;
+    flex-direction: row;
+}
+
+#spreadsheet-container {
+    background-color: lightblue;
+    height: 100%;
+    width: 75%;
+}
+
+#recent-files-container {
+    background-color: lightcoral;
+    height: 100%;
+    width: 25%;
 }

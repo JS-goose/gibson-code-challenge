@@ -4,10 +4,10 @@ import logo from '../../assets/nav-imgs/logo.png'
 
 const Nav = (props) => {
   const navLinks = [
-    <a href="#">Home</a>,
-    <a href="#">About</a>,
-    <a href="#">Stats</a>,
-    <a href="#">Contact</a>,
+    'Home',
+    'About',
+    'Stats',
+    'Contact',
   ];
   return (
     <nav>

@@ -1,3 +1,3 @@
 #center-content-container {
-    color: red;
+    height: calc(100vh - 17.1vh - 10vh);
 }

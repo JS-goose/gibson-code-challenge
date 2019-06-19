@@ -54,9 +54,13 @@ class CenterContent extends Component {
     render() {
         return (
             <article id={styles['center-content-container']}>
-                CenterContent
-                <button onClick={this.makePostRequest}>POST REQUEST</button>
-                <button onClick={this.getThreads}>GET THREADS</button>
+                <div id={styles['spreadsheet-container']}>spreadsheet container</div>
+                <div id={styles['recent-files-container']}>recent files</div>
+                <button onClick={this.makePostRequest}>Create New Spreadsheet</button>
+                <button onClick={this.getThreads}>Get Recent Spreadsheets</button>
+                <button>Import Spreadsheet(s)</button>
+                <button>Export Spreadsheet(s)</button>
+                <button>DELETE CUIRRENT</button>
             </article>
         )
     }

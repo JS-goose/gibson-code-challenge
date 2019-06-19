@@ -1,6 +1,7 @@
 import React, { Component }from 'react';
 import qs from 'qs';
 import axios from 'axios';
+import styles from './CenterContent.module.css';
 
 const userID = "ARMAEAXXOQQ"
 
@@ -52,11 +53,11 @@ class CenterContent extends Component {
 
     render() {
         return (
-            <div>
+            <article id={styles['center-content-container']}>
                 CenterContent
                 <button onClick={this.makePostRequest}>POST REQUEST</button>
                 <button onClick={this.getThreads}>GET THREADS</button>
-            </div>
+            </article>
         )
     }
     

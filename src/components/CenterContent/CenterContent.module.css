@@ -1,7 +1,9 @@
 #center-content-container {
-    height: calc(100vh - 17.1vh - 10vh);
+    height: calc(100vh - 19.5vh - 10vh);
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #spreadsheet-container {
@@ -14,4 +16,10 @@
     background-color: lightcoral;
     height: 100%;
     width: 25%;
+}
+
+#controls-container {
+    display: flex;
+    height: 5vh;
+    justify-content: center;
 }

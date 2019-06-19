@@ -1,5 +1,5 @@
 # Gibson Code Challenge
-![a preview of the Gibson code challenge application](./assets/preview.png)
+![a preview of the Gibson code challenge application](./src/assets/preview.png)
 
 This is a coding challenge I received as part of an interview for a developer position.  It is build on React / Create React App.
 

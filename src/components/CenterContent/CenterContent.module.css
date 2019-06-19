@@ -1,50 +1,75 @@
 #center-content-container {
-    height: calc(100vh - 22.1vh - 10vh);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vh - 22.1vh - 10vh);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #spreadsheet-container {
-    border: 1px solid var(--lightgray);
-    height: 100%;
-    width: 85%;
-    margin-top: 10px;
+  border: 1px solid var(--lightgray);
+  height: 100%;
+  width: 85%;
+  margin-top: 10px;
 }
 
 #recent-files-container {
-    border: 1px solid var(--lightgray);
-    height: 100%;
-    width: 15%;
-    margin-top: 10px;
+  border: 1px solid var(--lightgray);
+  height: 100%;
+  width: 15%;
+  margin-top: 10px;
 }
 
 #controls-container {
-    display: flex;
-    height: 5vh;
-    justify-content: center;
-    margin: 8px 0px 8px 0;
+  display: flex;
+  height: 5vh;
+  justify-content: center;
+  margin: 8px 0px 8px 0;
 }
 
 .control-buttons {
-    margin-top: 5px;
-    width: 180px;
-    font-size: 0.9rem;
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: var(--red);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border: 1px solid var(--lightgray);
+  margin-top: 5px;
+  width: 180px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: 1px solid var(--lightgray);
 }
 
 .control-buttons:hover {
-    font-size: 0.91rem;
-    text-decoration: underline;
-    box-shadow: 3px 3px 10px var(--red);
-    border: 1px solid var(--red);
-    color: var(--red);
-    background-color: white;
+  font-size: 0.91rem;
+  text-decoration: underline;
+  box-shadow: 3px 3px 10px var(--red);
+  border: 1px solid var(--red);
+  color: var(--red);
+  background-color: white;
+}
+
+input[type='file'] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  width: 180px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: 1px solid var(--lightgray);
 }

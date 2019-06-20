@@ -50,7 +50,7 @@
 }
 
 /* Hides the input button in order for the styling on the label to take effect */
-input[type='file'] {
+input[type="file"] {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -74,4 +74,13 @@ label {
   border: none;
   cursor: pointer;
   border: 1px solid var(--lightgray);
+}
+
+label:hover {
+  font-size: 0.91rem;
+  text-decoration: underline;
+  box-shadow: 3px 3px 10px var(--red);
+  border: 1px solid var(--red);
+  color: var(--red);
+  background-color: white;
 }

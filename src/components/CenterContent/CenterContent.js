@@ -6,6 +6,10 @@ import styles from "./CenterContent.module.css";
 const userID = "ARMAEAXXOQQ";
 
 class CenterContent extends Component {
+  state = {
+    uploadedFiles: null,
+  };
+
   makePostRequest = () => {
     const body = qs.stringify({
       title: "React App",
@@ -33,6 +37,8 @@ class CenterContent extends Component {
 
   handleImport = (event) => {
     console.log(event.target.files[0]);
+    this.setState({uploadedFiles: event.target.files[0]});
+    console.log(this.state)
   };
 
   getUsers = () => {};
@@ -55,6 +61,7 @@ class CenterContent extends Component {
           <input
             type="file"
             name="imported-spreadsheet"
+            accept=".gsheet, .xl, .xls, .xlsx, .dex"
             id="import-spreadsheet-button"
             onChange={this.handleImport}
           />

@@ -15,15 +15,16 @@ nav ul {
     padding-right: 2%;
 }
 
-nav ul li a{
+nav ul li{
     padding-right: 20px;
     text-decoration: none;
     color: inherit;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
     text-decoration: underline;
     color: var(--orange);
+    cursor: pointer;
 }
 
 #nav-logo {

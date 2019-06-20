@@ -49,6 +49,11 @@
   background-color: white;
 }
 
+.control-buttons:nth-last-of-type(1):hover {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
 /* Hides the input button in order for the styling on the label to take effect */
 input[type="file"] {
   width: 0.1px;

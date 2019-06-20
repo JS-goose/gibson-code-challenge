@@ -66,7 +66,7 @@ class CenterContent extends Component {
           <label htmlFor="import-spreadsheet-button">Import Spreadsheet</label>
           <input type="file" name="imported-spreadsheet" id="import-spreadsheet-button" />
           <button className={styles['control-buttons']}>Export Current</button>
-          <button className={styles['control-buttons']}>DELETE CURRENT</button>
+          <button className={styles['control-buttons']}>Delete Current</button>
         </div>
       </React.Fragment>
     );

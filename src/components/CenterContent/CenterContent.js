@@ -35,10 +35,29 @@ class CenterContent extends Component {
       });
   };
 
-  handleImport = (event) => {
-    console.log(event.target.files[0]);
-    this.setState({uploadedFiles: event.target.files[0]});
-    console.log(this.state)
+  // This needs more work, returns status code 401
+  handleImport = async (event) => {
+    await this.setState({ uploadedFiles: event.target.files[0] });
+    const data = new FormData();
+    data.append("file", this.state.uploadedFiles[0]);
+
+    const headers = {
+      "content-type": "multipart/form-data",
+      authorization:
+        "Bearer QVJNQU1BQVFrYmU=|1592341477|0BjZDfHHvNc9YhMWAp6/bIXZODod9ClZc6fYrBA8K3U=",
+    }
+
+    axios.post(
+        "https://cors-anywhere.herokuapp.com/https://platform.quip.com/1/threads/new-document",
+        headers,
+        data
+      )
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.error(`Error in the Import Function: ${error}`);
+      });
   };
 
   getUsers = () => {};
